@@ -10,17 +10,17 @@ Main difference:
 * All styles in a single file (is this a feature?) and two theme files (light and dark)
 * No build system (is this a feature?)
 * Removed some of the styles
-* If you need to develop on a clone of the water repository, then your `node_modules` will take 968 MB of space. 
-* I am a simple man. I like simple things. This just takes up 44 KB
+* If you need to develop on the water repository, then your `node_modules` will take 968 MB of space. 
+* I am a simple man. I like simple things. This takes up 44 KB
 
-## Usage:
+# Usage:
 
 Clone the repository. 
 
-copy the `light.css` or `dark.css` and link it in your HTML file.
-Then copy the `dolphin.css` file and link it in your HTML file below.
+Copy a theme file, `light.css` or `dark.css`, and link it in your HTML file.
+Then copy the `dolphin.css` file and link it in your HTML file just below the theme file.
 
-Something like this: 
+Something like this will do it: 
 
 ```html
 <link id="theme-select" rel="stylesheet" href="dark.css">
