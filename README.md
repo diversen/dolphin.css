@@ -3,6 +3,8 @@
 `dolphin.css` was something that came out of [water.css](https://watercss.kognise.dev/) 
 which is a very nice drop-in collection of CSS styles.
 
+Here is a [demo of dolphin.css](https://diversen.github.io/dolphin.css/)
+
 Main difference: 
 
 * All styles in a single file (is this a feature?) and two theme files (light and dark)
