@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <h1>dolphin.css</h1>
 
   <p>
@@ -20,13 +21,13 @@
   </p>
   <ol>
     <li>
-      Smaller in size
+      Simplified. Removed some of the styles.
     </li>
     <li>
-      Only a single stylesheet. So you can just modify one single stylesheet.
+      Split in only tree stylesheets. A dark og a light theme, and a main stylesheet.
     </li>
     <li>
-      No build system (is this a feature?).
+      No build system (is this a feature?). But it means we go from 996MB to 44KB when developing.
     </li>
   </ol>
 
@@ -42,36 +43,12 @@
   </form>
 
 
-  <div class="row">
-    <div>
-      <a href="https://github.com/diversen/dolphin.css"><b>GitHub</b></a>
-    </div>
-  </div>
-
   <h2>Installation</h2>
 
-  <table id="version-info">
-    <caption>
-      <h3>Version info</h3>
-    </caption>
-
-    <tbody>
-      <tr>
-        <th scope="row">File</th>
-        <td id="table-file-name"></td>
-      </tr>
-
-      <tr>
-        <th scope="row">Size (min + gzip)</th>
-        <td id="table-file-size"></td>
-      </tr>
-
-      <tr>
-        <th scope="row">Theme</th>
-        <td id="table-theme"></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <div>
+      Go to <a href="https://github.com/diversen/dolphin.css"><b>dolphin.css repo</b></a>
+    </div>
   </div>
 
   <h2 id="goals">Goals</h2>
@@ -92,11 +69,6 @@
     you'll be good to go!
   </p>
   <p>In fact, try resizing this page. Everything flows super nicely as you'll see.</p>
-
-  <h2 id="bookmarklet">Bookmarklet</h2>
-  <p>
-    A bookmarklet is a snippet of JavaScript that sits in your bookmarks bar.
-  </p>
 
   <h2 id="demo">Element demos</h2>
   <p>This is supposed to be a demo page so we need more elements!</p>
@@ -139,8 +111,7 @@
   </form>
 
   <h3 id="code">Code</h3>
-  <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code>
-    </pre>
+  <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
 
   <h3 id="other">Other</h3>
   <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
@@ -179,27 +150,6 @@
     <summary>Some summary/details can't hurt!</summary>
     <p>Lorem ipsum dolor sit blah blah.</p>
   </details>
-
-  <p>The dialog (form, and menu) tag</p>
-
-  <div>
-    <button type="button" id="dialog-trigger">
-      Show me the dialog!
-    </button>
-    <span id="dialog-result"></span>
-  </div>
-
-  <dialog id="dialog">
-    <header>This is a sample dialog</header>
-    <form method="dialog">
-      <p>What is your favorite pet animal?</p>
-      <menu>
-        <button value="feline">Cats</button>
-        <button value="canine">Dogs</button>
-        <button value="other">Others</button>
-      </menu>
-    </form>
-  </dialog>
 
   <h3 id="typography">Typography</h3>
   <p>

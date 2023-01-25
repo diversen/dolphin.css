@@ -5,11 +5,11 @@ which is a very nice drop-in collection of CSS styles.
 
 Main difference: 
 
-* All styles in a single file (is this a feature?)
+* All styles in a single file (is this a feature?) and two theme files (light and dark)
 * No build system (is this a feature?)
 * Removed some of the styles
 * If you need to develop on a clone of the water repository, then your `node_modules` will take 968 MB of space. 
-* I am a simple man. I like simple thing. This just takes up 44 KB
+* I am a simple man. I like simple things. This just takes up 44 KB
 
 ## Usage:
 
@@ -26,6 +26,11 @@ Something like this:
 ```
 
 If you want to use a theme-shifter, then take a look at the index.html file and the script.js
+
+Live reload while developing: 
+
+    npm install browser-reload -g
+    browser-reload 
 
 # License
 
