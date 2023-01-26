@@ -6,200 +6,202 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>dolphin.css</title>
   <meta name="description" content="A drop-in collection of CSS styles to make simple websites" />
-  <link id="theme-select" rel="stylesheet" href="light.css">
-  <link rel="stylesheet" href="dolphin.css">
+  <link id="theme-select" rel="stylesheet" href="css/light.css">
+  <link rel="stylesheet" href="css/dolphin.css">
+  <script type="module">
+    import { } from './js/theme_select.js';
+  </script>
 </head>
 
 <body>
 
-  <h1>dolphin.css</h1>
+    <h1>dolphin.css</h1>
+    <p>
+      <strong>dolphin.css</strong> is a drop-in collection of CSS styles.
+      It is almost a copy of <a href="https://github.com/kognise/water.css">water.css </a>
+      But with a few modifications.
+    </p>
+    <ol>
+      <li>
+        Simplified. Removed some of the styles.
+      </li>
+      <li>
+        Split in three stylesheets. A dark og a light theme, and a main stylesheet.
+      </li>
+      <li>
+        No build system (is this a feature?). But it means we go down from 996MB to 44KB when developing.
+      </li>
+    </ol>
 
-  <p>
-    <strong>dolphin.css</strong> is a drop-in collection of CSS styles.
-    It is almost a copy of <a href="https://github.com/kognise/water.css">water.css </a>
-    But with a few modifications.
-  </p>
-  <ol>
-    <li>
-      Simplified. Removed some of the styles.
-    </li>
-    <li>
-      Split in three stylesheets. A dark og a light theme, and a main stylesheet.
-    </li>
-    <li>
-      No build system (is this a feature?). But it means we go down from 996MB to 44KB when developing.
-    </li>
-  </ol>
+    <form id="theme-form">
+      <input type="radio" value="auto" checked name="theme" id="theme-auto" />
+      <label for="theme-auto">Automatic 🌙 / ☀</label>
 
-  <form id="theme-form">
-    <input type="radio" value="auto" checked name="theme" id="theme-auto" />
-    <label for="theme-auto">Automatic 🌙 / ☀</label>
+      <input type="radio" value="dark" name="theme" id="theme-dark" />
+      <label for="theme-dark">Dark theme 🌙</label>
 
-    <input type="radio" value="dark" name="theme" id="theme-dark" />
-    <label for="theme-dark">Dark theme 🌙</label>
+      <input type="radio" value="light" name="theme" id="theme-light" />
+      <label for="theme-light">Light theme ☀</label>
+    </form>
 
-    <input type="radio" value="light" name="theme" id="theme-light" />
-    <label for="theme-light">Light theme ☀</label>
-  </form>
-
-  <h2>Installation</h2>
-  <div class="row">
-    <div>
-      Go to <a href="https://github.com/diversen/dolphin.css"><b>dolphin.css on github</b></a>
+    <h2>Installation</h2>
+    <div class="row">
+      <div>
+        Go to <a href="https://github.com/diversen/dolphin.css"><b>dolphin.css on github</b></a>
+      </div>
     </div>
-  </div>
 
-  <h2 id="goals">Goals</h2>
-  <ul>
-    <li>Responsive</li>
-    <li>Good code quality</li>
-    <li>Good browser support</li>
-    <li>Small size 4KB per file the <strong>dist/</strong> dir</li>
-    <li>Beautiful</li>
-    <li>No classes</li>
-  </ul>
+    <h2 id="goals">Goals</h2>
+    <ul>
+      <li>Responsive</li>
+      <li>Good code quality</li>
+      <li>Good browser support</li>
+      <li>Small size 4KB per file the <strong>dist/</strong> dir</li>
+      <li>Beautiful</li>
+      <li>No classes</li>
+    </ul>
 
-  <h2 id="responsive">Is it responsive?</h2>
-  <p>
-    <strong>Heck yeah!</strong> It doesn't include any fancy styles so it's easily mobile
-    responsive. Just add the famous
-    <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">responsive viewport tag</a> and
-    you'll be good to go!
-  </p>
-  <p>In fact, try resizing this page. Everything flows super nicely as you'll see.</p>
+    <h2 id="responsive">Is it responsive?</h2>
+    <p>
+      <strong>Heck yeah!</strong> It doesn't include any fancy styles so it's easily mobile
+      responsive. Just add the famous
+      <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">responsive viewport tag</a> and
+      you'll be good to go!
+    </p>
+    <p>In fact, try resizing this page. Everything flows super nicely as you'll see.</p>
 
-  <h2 id="demo">Element demos</h2>
-  <p>This is supposed to be a demo page so we need more elements!</p>
+    <h2 id="demo">Element demos</h2>
+    <p>This is supposed to be a demo page so we need more elements!</p>
 
-  <h3 id="form-elements">Form elements</h3>
-  <form>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" />
+    <h3 id="form-elements">Form elements</h3>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" />
 
-    <label for="id">User id (read only)</label>
-    <input readonly name="id" id="id" value="04D6H89Z" />
+      <label for="id">User id (read only)</label>
+      <input readonly name="id" id="id" value="04D6H89Z" />
 
-    <label for="disabled">Random disabled input</label>
-    <input disabled name="disabled" id="disabled" placeholder="Because why not?" />
+      <label for="disabled">Random disabled input</label>
+      <input disabled name="disabled" id="disabled" placeholder="Because why not?" />
 
-    <label for="about">About me</label>
-    <textarea name="about" id="about" placeholder="I am a textarea..."></textarea>
+      <label for="about">About me</label>
+      <textarea name="about" id="about" placeholder="I am a textarea..."></textarea>
 
-    <label>Choose a Doe:</label>
-    <div>
-      <input type="radio" id="john" name="drone" value="john" checked />
-      <label for="john">John Doe</label>
-    </div>
-    <div>
-      <input type="radio" id="jane" name="drone" value="jane" checked />
-      <label for="jane">Jane Doe</label>
-    </div>
-    <div>
-      <input type="radio" id="johnny" name="drone" value="johnny" checked />
-      <label for="johnny">Johnny Doe</label>
-    </div>
+      <label>Choose a Doe:</label>
+      <div>
+        <input type="radio" id="john" name="drone" value="john" checked />
+        <label for="john">John Doe</label>
+      </div>
+      <div>
+        <input type="radio" id="jane" name="drone" value="jane" checked />
+        <label for="jane">Jane Doe</label>
+      </div>
+      <div>
+        <input type="radio" id="johnny" name="drone" value="johnny" checked />
+        <label for="johnny">Johnny Doe</label>
+      </div>
+
+      <br />
+
+      <input type="checkbox" name="remember" id="remember" checked />
+      <label for="remember">Remember me</label>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <h3 id="code">Code</h3>
+    <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
+
+    <h3 id="other">Other</h3>
+    <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
+    <img src="https://placekitten.com/408/287" alt="Example kitten" />
+    <hr />
+
+    <p>And here's a nicely marked up table!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>2</td>
+          <td>$299.99</td>
+        </tr>
+        <tr>
+          <td>Mozilla</td>
+          <td>10</td>
+          <td>$100,000.00</td>
+        </tr>
+        <tr>
+          <td>Quesadilla</td>
+          <td>1</td>
+          <td>$2.22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <details>
+      <summary>Some summary/details can't hurt!</summary>
+      <p>Lorem ipsum dolor sit blah blah.</p>
+    </details>
+
+    <h3 id="typography">Typography</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, quis
+      ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit. Duis
+      ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius
+      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu
+      felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui
+      aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora
+      torquent per conubia nostra, per inceptos himenaeos.
+      <strong>This is strong,</strong> this is normal, <b>this is just bold,</b>
+      <em>and this is emphasized!</em> And heck, <a href="/">here</a>'s a link.
+    </p>
+
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      "The HTML blockquote Element (or HTML Block Quotation Element) indicates that the enclosed
+      text is an extended quotation. Usually, this is rendered visually by indentation (see
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a>
+      for how to change it). A URL for the source of the quotation may be given using the
+      <code>cite</code> attribute, while a text representation of the source can be given using the
+      <code>&lt;cite&gt;</code> cite element."
+
+      <footer>
+        <cite>MDN, "The Block Quotation element"</cite>
+      </footer>
+    </blockquote>
+
+    <ul>
+      <li>Unordered list item 1</li>
+      <li>Unordered list item 2</li>
+      <li>Unordered list item 3</li>
+    </ul>
+    <ol>
+      <li>Ordered list item 1</li>
+      <li>Ordered list item 2</li>
+      <li>Ordered list item 3</li>
+    </ol>
 
     <br />
 
-    <input type="checkbox" name="remember" id="remember" checked />
-    <label for="remember">Remember me</label>
-
-    <input type="submit" value="Submit" />
-    <input type="reset" value="Reset" />
-  </form>
-
-  <h3 id="code">Code</h3>
-  <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
-
-  <h3 id="other">Other</h3>
-  <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
-  <img src="https://placekitten.com/408/287" alt="Example kitten" />
-  <hr />
-
-  <p>And here's a nicely marked up table!</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Quantity</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Godzilla</td>
-        <td>2</td>
-        <td>$299.99</td>
-      </tr>
-      <tr>
-        <td>Mozilla</td>
-        <td>10</td>
-        <td>$100,000.00</td>
-      </tr>
-      <tr>
-        <td>Quesadilla</td>
-        <td>1</td>
-        <td>$2.22</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <details>
-    <summary>Some summary/details can't hurt!</summary>
-    <p>Lorem ipsum dolor sit blah blah.</p>
-  </details>
-
-  <h3 id="typography">Typography</h3>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, quis
-    ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit. Duis
-    ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius
-    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu
-    felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui
-    aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora
-    torquent per conubia nostra, per inceptos himenaeos.
-    <strong>This is strong,</strong> this is normal, <b>this is just bold,</b>
-    <em>and this is emphasized!</em> And heck, <a href="/">here</a>'s a link.
-  </p>
-
-  <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-    "The HTML blockquote Element (or HTML Block Quotation Element) indicates that the enclosed
-    text is an extended quotation. Usually, this is rendered visually by indentation (see
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a>
-    for how to change it). A URL for the source of the quotation may be given using the
-    <code>cite</code> attribute, while a text representation of the source can be given using the
-    <code>&lt;cite&gt;</code> cite element."
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
 
     <footer>
-      <cite>MDN, "The Block Quotation element"</cite>
+      <a href="#">Back to top ⬆</a>
     </footer>
-  </blockquote>
 
-  <ul>
-    <li>Unordered list item 1</li>
-    <li>Unordered list item 2</li>
-    <li>Unordered list item 3</li>
-  </ul>
-  <ol>
-    <li>Ordered list item 1</li>
-    <li>Ordered list item 2</li>
-    <li>Ordered list item 3</li>
-  </ol>
-
-  <br />
-
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <h4>Heading 4</h4>
-  <h5>Heading 5</h5>
-  <h6>Heading 6</h6>
-
-  <footer>
-    <a href="#">Back to top ⬆</a>
-  </footer>
 
 </body>
-<script src="script.js"></script>
 
 </html>

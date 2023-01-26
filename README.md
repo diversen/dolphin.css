@@ -23,8 +23,8 @@ Then copy the `dolphin.css` file and link it in your HTML file just below the th
 Something like this will do it: 
 
 ```html
-<link id="theme-select" rel="stylesheet" href="dark.css">
-<link rel="stylesheet" href="dolphin.css">
+<link id="theme-select" rel="stylesheet" href="/css/dark.css">
+<link rel="stylesheet" href="/css/dolphin.css">
 ```
 
 If you want to use a theme-shifter, then take a look at the index.html file and the script.js
