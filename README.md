@@ -7,8 +7,8 @@ Here is a [demo of dolphin.css](https://diversen.github.io/dolphin.css/)
 
 Main difference: 
 
-* All styles in a single file (is this a feature?) and two theme files (light and dark)
-* No build system (is this a feature?)
+* All styles in a single file and two theme files (light and dark)
+* No build system
 * Removed some of the styles
 * If you need to develop on the water repository, then your `node_modules` will take 968 MB of space. 
 * I am a simple man. I like simple things. This takes up 44 KB
@@ -25,6 +25,18 @@ Something like this will do it:
 ```html
 <link id="theme-select" rel="stylesheet" href="/css/dark.css">
 <link rel="stylesheet" href="/css/dolphin.css">
+```
+
+Or the compilled dark version in `dist/`:
+
+```html
+<link id="theme-select" rel="stylesheet" href="/dist/dark.css">
+```
+
+Or the compilled light version in `dist/`: 
+
+```html
+<link id="theme-select" rel="stylesheet" href="/dist/dark.css">
 ```
 
 If you want to use a theme-shifter, then take a look at the index.html file and the script.js
