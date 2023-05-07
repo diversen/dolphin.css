@@ -20,4 +20,5 @@
   --variable: #39a33c;
   --highlight: #ff0;
   --width: 800px;
+  --select-arrow: svg-load('./assets/select-arrow.svg', fill: #161f27);
 }
