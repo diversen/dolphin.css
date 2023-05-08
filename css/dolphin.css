@@ -162,7 +162,6 @@ input[type='range'],
 select,
 button,
 textarea {
-    display: block;
     margin-right: 0;
     box-sizing: border-box;
     resize: vertical;
