@@ -191,6 +191,11 @@ select[multiple] {
     overflow-y: auto;
 }
 
+option {
+    background-color: var(--background );
+    color: var(--text-bright);
+}
+
 input:focus,
 select:focus,
 button:focus,
